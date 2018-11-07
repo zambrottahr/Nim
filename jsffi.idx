@@ -1,0 +1,70 @@
+JsObject	jsffi.html#JsObject	jsffi: JsObject	
+JsAssoc	jsffi.html#JsAssoc	jsffi: JsAssoc	
+js	jsffi.html#js	jsffi: js	
+jsArguments	jsffi.html#jsArguments	jsffi: jsArguments	
+jsNull	jsffi.html#jsNull	jsffi: jsNull	
+jsUndefined	jsffi.html#jsUndefined	jsffi: jsUndefined	
+jsDirname	jsffi.html#jsDirname	jsffi: jsDirname	
+jsFilename	jsffi.html#jsFilename	jsffi: jsFilename	
+JsError	jsffi.html#JsError	jsffi: JsError	
+JsEvalError	jsffi.html#JsEvalError	jsffi: JsEvalError	
+JsRangeError	jsffi.html#JsRangeError	jsffi: JsRangeError	
+JsReferenceError	jsffi.html#JsReferenceError	jsffi: JsReferenceError	
+JsSyntaxError	jsffi.html#JsSyntaxError	jsffi: JsSyntaxError	
+JsTypeError	jsffi.html#JsTypeError	jsffi: JsTypeError	
+JsURIError	jsffi.html#JsURIError	jsffi: JsURIError	
+newJsObject	jsffi.html#newJsObject,	jsffi: newJsObject(): JsObject	
+newJsAssoc	jsffi.html#newJsAssoc,	jsffi: newJsAssoc[K, V](): JsAssoc[K, V]	
+hasOwnProperty	jsffi.html#hasOwnProperty,JsObject,cstring	jsffi: hasOwnProperty(x: JsObject; prop: cstring): bool	
+jsTypeOf	jsffi.html#jsTypeOf,JsObject	jsffi: jsTypeOf(x: JsObject): cstring	
+jsNew	jsffi.html#jsNew,auto	jsffi: jsNew(x: auto): JsObject	
+jsDelete	jsffi.html#jsDelete,auto	jsffi: jsDelete(x: auto): JsObject	
+require	jsffi.html#require,cstring	jsffi: require(module: cstring): JsObject	
+to	jsffi.html#to,JsObject,typedesc	jsffi: to(x: JsObject; T: typedesc): T:type	
+toJs	jsffi.html#toJs,T	jsffi: toJs[T](val: T): JsObject	
+toJs	jsffi.html#toJs.t,string	jsffi: toJs(s: string): JsObject	
+jsFromAst	jsffi.html#jsFromAst.m,untyped	jsffi: jsFromAst(n: untyped): untyped	
+`&amp;`	jsffi.html#&,cstring,cstring	jsffi: `&amp;`(a, b: cstring): cstring	
+`+`	jsffi.html#+,JsObject,JsObject	jsffi: `+`(x, y: JsObject): JsObject	
+`-`	jsffi.html#-,JsObject,JsObject	jsffi: `-`(x, y: JsObject): JsObject	
+`*`	jsffi.html#*,JsObject,JsObject	jsffi: `*`(x, y: JsObject): JsObject	
+`/`	jsffi.html#/,JsObject,JsObject	jsffi: `&#x2F;`(x, y: JsObject): JsObject	
+`%`	jsffi.html#%,JsObject,JsObject	jsffi: `%`(x, y: JsObject): JsObject	
+`+=`	jsffi.html#+=,JsObject,JsObject	jsffi: `+=`(x, y: JsObject): JsObject	
+`-=`	jsffi.html#-=,JsObject,JsObject	jsffi: `-=`(x, y: JsObject): JsObject	
+`*=`	jsffi.html#*=,JsObject,JsObject	jsffi: `*=`(x, y: JsObject): JsObject	
+`/=`	jsffi.html#/=,JsObject,JsObject	jsffi: `&#x2F;=`(x, y: JsObject): JsObject	
+`%=`	jsffi.html#%=,JsObject,JsObject	jsffi: `%=`(x, y: JsObject): JsObject	
+`++`	jsffi.html#++,JsObject	jsffi: `++`(x: JsObject): JsObject	
+`--`	jsffi.html#--,JsObject	jsffi: `--`(x: JsObject): JsObject	
+`&gt;`	jsffi.html#>,JsObject,JsObject	jsffi: `&gt;`(x, y: JsObject): JsObject	
+`&lt;`	jsffi.html#<,JsObject,JsObject	jsffi: `&lt;`(x, y: JsObject): JsObject	
+`&gt;=`	jsffi.html#>=,JsObject,JsObject	jsffi: `&gt;=`(x, y: JsObject): JsObject	
+`&lt;=`	jsffi.html#<=,JsObject,JsObject	jsffi: `&lt;=`(x, y: JsObject): JsObject	
+`and`	jsffi.html#and,JsObject,JsObject	jsffi: `and`(x, y: JsObject): JsObject	
+`or`	jsffi.html#or,JsObject,JsObject	jsffi: `or`(x, y: JsObject): JsObject	
+`not`	jsffi.html#not,JsObject	jsffi: `not`(x: JsObject): JsObject	
+`in`	jsffi.html#in,JsObject,JsObject	jsffi: `in`(x, y: JsObject): JsObject	
+`[]`	jsffi.html#[],JsObject,cstring	jsffi: `[]`(obj: JsObject; field: cstring): JsObject	
+`[]`	jsffi.html#[],JsObject,int	jsffi: `[]`(obj: JsObject; field: int): JsObject	
+`[]=`	jsffi.html#[]=,JsObject,cstring,T	jsffi: `[]=`[T](obj: JsObject; field: cstring; val: T)	
+`[]=`	jsffi.html#[]=,JsObject,int,T	jsffi: `[]=`[T](obj: JsObject; field: int; val: T)	
+`[]`	jsffi.html#[],JsAssoc[K: not string,V],K	jsffi: `[]`[K: not string; V](obj: JsAssoc[K, V]; field: K): V	
+`[]`	jsffi.html#[],JsAssoc[string,V],cstring	jsffi: `[]`[V](obj: JsAssoc[string, V]; field: cstring): V	
+`[]=`	jsffi.html#[]=,JsAssoc[K: not string,V],K,V	jsffi: `[]=`[K: not string; V](obj: JsAssoc[K, V]; field: K; val: V)	
+`[]=`	jsffi.html#[]=,JsAssoc[string,V],cstring,V	jsffi: `[]=`[V](obj: JsAssoc[string, V]; field: cstring; val: V)	
+`==`	jsffi.html#==,JsRoot,JsRoot	jsffi: `==`(x, y: JsRoot): bool	
+`.`	jsffi.html#..m,JsObject,untyped	jsffi: `.`(obj: JsObject; field: untyped): JsObject	
+`.=`	jsffi.html#.=.m,JsObject,untyped,untyped	jsffi: `.=`(obj: JsObject; field, value: untyped): untyped	
+`.()`	jsffi.html#.().m,JsObject,untyped,varargs[JsObject,jsFromAst]	jsffi: `.()`(obj: JsObject; field: untyped; args: varargs[JsObject, jsFromAst]): JsObject	
+`.`	jsffi.html#..m,JsAssoc[K: string or cstring,V],untyped	jsffi: `.`[K: string | cstring; V](obj: JsAssoc[K, V]; field: untyped): V	
+`.=`	jsffi.html#.=.m,JsAssoc[K: string or cstring,V],untyped,V	jsffi: `.=`[K: string | cstring; V](obj: JsAssoc[K, V]; field: untyped; value: V): untyped	
+`.()`	jsffi.html#.().m,JsAssoc[K: string or cstring,V: proc],untyped,varargs[untyped]	jsffi: `.()`[K: string | cstring; V: proc](obj: JsAssoc[K, V]; field: untyped;\n                               args: varargs[untyped]): auto	
+pairs	jsffi.html#pairs.i,JsObject	jsffi: pairs(obj: JsObject): (cstring, JsObject)	
+items	jsffi.html#items.i,JsObject	jsffi: items(obj: JsObject): JsObject	
+keys	jsffi.html#keys.i,JsObject	jsffi: keys(obj: JsObject): cstring	
+pairs	jsffi.html#pairs.i,JsAssoc[K,V]	jsffi: pairs[K, V](assoc: JsAssoc[K, V]): (K, V)	
+items	jsffi.html#items.i,JsAssoc[K,V]	jsffi: items[K, V](assoc: JsAssoc[K, V]): V	
+keys	jsffi.html#keys.i,JsAssoc[K,V]	jsffi: keys[K, V](assoc: JsAssoc[K, V]): K	
+`{}`	jsffi.html#{}.m,typedesc,varargs[untyped]	jsffi: `{}`(typ: typedesc; xs: varargs[untyped]): auto	
+bindMethod	jsffi.html#bindMethod.m,typed	jsffi: bindMethod(procedure: typed): auto	
